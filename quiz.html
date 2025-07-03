@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Swap Quiz</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .animate-gradient {
+      background: linear-gradient(120deg, #ffffff, #f0fdf4, #d1fae5);
+      background-size: 200% 200%;
+      animation: gradient 10s ease infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-white via-green-50 to-green-100 animate-gradient font-sans text-gray-800">
+
+
+  <header class="backdrop-blur bg-white/70 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">🔋 EV Swap Portal</h1>
+      <nav class="space-x-4 text-sm md:text-base">
+        <a href="index.html" class="hover:text-green-600 font-medium">Home</a>
+        <a href="technology.html" class="hover:text-green-600 font-medium">Technology</a>
+        <a href="benefits.html" class="hover:text-green-600 font-medium">Benefits</a>
+        <a href="future.html" class="hover:text-green-600 font-medium">Future</a>
+        <a href="quiz.html" class="text-green-600 font-bold">Quiz</a>
+        <a href="faq.html" class="hover:text-green-600 font-medium">FAQ</a>
+        <a href="contact.html" class="hover:text-green-600 font-medium">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-16 text-center bg-green-100" data-aos="fade-down">
+    <h2 class="text-4xl font-extrabold text-green-800 mb-4">Test Your EV Knowledge</h2>
+    <p class="text-gray-700 text-lg max-w-2xl mx-auto">Take this short quiz to see how much you know about EV battery swapping and green mobility!</p>
+  </section>
+
+  <section class="py-12 px-6 max-w-3xl mx-auto bg-white shadow-md rounded-lg mt-8 mb-12" data-aos="fade-up">
+    <form id="quizForm" class="space-y-8">
+
+      <!-- Q1 -->
+      <div>
+        <h3 class="text-lg font-semibold text-green-700">1. What is the average time taken to swap an EV battery?</h3>
+        <div class="mt-2 space-y-2">
+          <label><input type="radio" name="q1" value="a" class="mr-2">10–15 minutes</label><br>
+          <label><input type="radio" name="q1" value="b" class="mr-2">2–5 minutes</label><br>
+          <label><input type="radio" name="q1" value="c" class="mr-2">20–30 minutes</label>
+        </div>
+      </div>
+
+      <!-- Q2 -->
+      <div>
+        <h3 class="text-lg font-semibold text-green-700">2. What removes the depleted battery in a swap station?</h3>
+        <div class="mt-2 space-y-2">
+          <label><input type="radio" name="q2" value="a" class="mr-2">Human Mechanic</label><br>
+          <label><input type="radio" name="q2" value="b" class="mr-2">Robotic Arms</label><br>
+          <label><input type="radio" name="q2" value="c" class="mr-2">Battery Explodes</label>
+        </div>
+      </div>
+
+      <!-- Q3 -->
+      <div>
+        <h3 class="text-lg font-semibold text-green-700">3. What does BaaS stand for in EV context?</h3>
+        <div class="mt-2 space-y-2">
+          <label><input type="radio" name="q3" value="a" class="mr-2">Battery and Service</label><br>
+          <label><input type="radio" name="q3" value="b" class="mr-2">Battery-as-a-Service</label><br>
+          <label><input type="radio" name="q3" value="c" class="mr-2">Battery All Season</label>
+        </div>
+      </div>
+
+      <!-- Q4 -->
+      <div>
+        <h3 class="text-lg font-semibold text-green-700">4. Which of the following is a benefit of battery swapping?</h3>
+        <div class="mt-2 space-y-2">
+          <label><input type="radio" name="q4" value="a" class="mr-2">Longer queue times</label><br>
+          <label><input type="radio" name="q4" value="b" class="mr-2">Reduced vehicle downtime</label><br>
+          <label><input type="radio" name="q4" value="c" class="mr-2">Higher pollution</label>
+        </div>
+      </div>
+
+      <!-- Q5 -->
+      <div>
+        <h3 class="text-lg font-semibold text-green-700">5. What powers the swapped batteries at a swap station?</h3>
+        <div class="mt-2 space-y-2">
+          <label><input type="radio" name="q5" value="a" class="mr-2">Solar, Wind or Grid Energy</label><br>
+          <label><input type="radio" name="q5" value="b" class="mr-2">Diesel Generator</label><br>
+          <label><input type="radio" name="q5" value="c" class="mr-2">Charcoal</label>
+        </div>
+      </div>
+
+     
+      <div class="text-center">
+        <button type="submit" class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow hover:scale-105 transition">
+          Submit Quiz
+        </button>
+      </div>
+    </form>
+
+    <div id="quizResult" class="mt-8 text-center text-xl font-semibold text-green-700 hidden"></div>
+  </section>
+
+  <footer class="bg-gray-800 text-white text-center py-6">
+    <p class="mb-2">© 2025 EV Swap Portal | Built for Educational Purposes</p>
+    <div class="space-x-4 text-xl">
+      <a href="#" class="hover:text-green-400"><i class='bx bxl-linkedin'></i></a>
+      <a href="#" class="hover:text-green-400"><i class='bx bxl-twitter'></i></a>
+      <a href="#" class="hover:text-green-400"><i class='bx bxl-github'></i></a>
+    </div>
+  </footer>
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  <script>
+    const form = document.getElementById('quizForm');
+    const result = document.getElementById('quizResult');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      let score = 0;
+      if (form.q1.value === 'b') score++;
+      if (form.q2.value === 'b') score++;
+      if (form.q3.value === 'b') score++;
+      if (form.q4.value === 'b') score++;
+      if (form.q5.value === 'a') score++;
+
+      result.textContent = `You scored ${score}/5 correct!`;
+      result.classList.remove('hidden');
+    });
+  </script>
+
+</body>
+</html>

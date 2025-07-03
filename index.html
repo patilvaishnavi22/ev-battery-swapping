@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EV Battery Swapping Portal</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+    @keyframes gradient {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .animate-gradient {
+      background: linear-gradient(120deg, #ffffff, #f0fdf4, #d1fae5);
+      background-size: 200% 200%;
+      animation: gradient 10s ease infinite;
+    }
+  </style>
+</head>
+
+<body class="bg-gradient-to-br from-white via-green-50 to-green-100 animate-gradient text-gray-800">
+
+  <header class="backdrop-blur bg-white/80 shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-green-600">🔋 EV Swap Portal</h1>
+      <nav class="space-x-4 text-sm md:text-base font-medium">
+        <a href="index.html" class="text-green-600 font-semibold">Home</a>
+        <a href="technology.html" class="hover:text-green-600">Technology</a>
+        <a href="benefits.html" class="hover:text-green-600">Benefits</a>
+        <a href="future.html" class="hover:text-green-600">Future</a>
+        <a href="quiz.html" class="hover:text-green-600">Quiz</a>
+        <a href="faq.html" class="hover:text-green-600">FAQ</a>
+        <a href="contact.html" class="hover:text-green-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-green-100 py-20 text-center px-4" data-aos="fade-up">
+    <h2 class="text-4xl font-extrabold text-green-800 mb-4">Powering the Future of Mobility</h2>
+    <p class="text-gray-700 text-lg mb-6 max-w-2xl mx-auto">
+      Discover how EV Battery Swapping is redefining transportation with rapid, efficient, and sustainable solutions.
+    </p>
+    <a href="#learning" class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition hover:scale-105 hover:shadow-xl">
+      🚗 Start Learning
+    </a>
+  </section>
+
+  <section class="py-16 bg-white text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-bold text-green-700 mb-10">Why Battery Swapping?</h3>
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto px-4">
+      <div class="bg-green-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="text-xl font-bold mb-2 text-green-800">⏱️ Super Fast</h4>
+        <p class="text-gray-600">Swap batteries in under 5 minutes. Eliminate wait times completely!</p>
+      </div>
+      <div class="bg-green-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="text-xl font-bold mb-2 text-green-800">🌱 Eco-Friendly</h4>
+        <p class="text-gray-600">Reduces e-waste and improves battery recycling through optimized use.</p>
+      </div>
+      <div class="bg-green-50 p-6 rounded-xl shadow hover:shadow-xl transition">
+        <h4 class="text-xl font-bold mb-2 text-green-800">📊 Smart Systems</h4>
+        <p class="text-gray-600">Integrated IoT + AI ensures battery safety and real-time performance checks.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="learning" class="py-16 bg-gradient-to-r from-green-50 to-green-100 text-center" data-aos="zoom-in">
+    <h3 class="text-3xl font-bold text-green-700 mb-2">📘 Your Personalized EV Learning Journey</h3>
+    <div class="text-center text-gray-600 max-w-2xl mx-auto mb-8">
+      Not sure where to begin? Follow this guided path to become an EV battery swapping pro — from basics to advanced!
+    </div>
+    <div class="max-w-5xl mx-auto grid md:grid-cols-3 sm:grid-cols-2 gap-6 px-4 text-left text-gray-700">
+      <div class="relative group bg-white p-6 rounded-xl shadow hover:scale-105 hover:bg-green-50 transition duration-300">
+        <h4 class="font-semibold text-green-800 mb-2">🔍 Step 1: Know the Problem</h4>
+        <p class="text-sm">Understand the current EV charging pain points.</p>
+      </div>
+      <div class="relative group bg-white p-6 rounded-xl shadow hover:scale-105 hover:bg-green-50 transition duration-300">
+        <h4 class="font-semibold text-green-800 mb-2">🔧 Step 2: How Swapping Helps</h4>
+        <p class="text-sm">See how battery swapping solves EV limitations.</p>
+      </div>
+      <div class="relative group bg-white p-6 rounded-xl shadow hover:scale-105 hover:bg-green-50 transition duration-300">
+        <h4 class="font-semibold text-green-800 mb-2">⚙️ Step 3: Explore the Tech</h4>
+        <p class="text-sm">Learn about the tech stack powering EV swap stations.</p>
+        <a href="technology.html" class="text-green-600 text-sm font-medium mt-2 inline-block hover:underline">Learn More →</a>
+      </div>
+      <div class="relative group bg-white p-6 rounded-xl shadow hover:scale-105 hover:bg-green-50 transition duration-300">
+        <h4 class="font-semibold text-green-800 mb-2">🎥 Step 4: Watch it Work</h4>
+        <p class="text-sm">Visualize the actual swapping process in a demo.</p>
+      </div>
+      <div class="relative group bg-white p-6 rounded-xl shadow hover:scale-105 hover:bg-green-50 transition duration-300">
+        <h4 class="font-semibold text-green-800 mb-2">📚 Step 5: Deep Dive</h4>
+        <p class="text-sm">Read FAQs and advanced questions.</p>
+      </div>
+      <div class="relative group bg-white p-6 rounded-xl shadow hover:scale-105 hover:bg-green-50 transition duration-300">
+        <h4 class="font-semibold text-green-800 mb-2">🧠 Step 6: Take the Quiz</h4>
+        <p class="text-sm">Test your knowledge and earn a badge!</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-green-50 text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-green-700 mb-6">Battery Swapping in Numbers</h3>
+    <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto text-green-800 text-center">
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+        <i class='bx bx-transfer text-4xl mb-2'></i>
+        <h4 class="text-3xl font-bold" id="swaps">0</h4>
+        <p class="text-sm text-gray-600">Swaps Completed</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+        <i class='bx bxs-map-pin text-4xl mb-2'></i>
+        <h4 class="text-3xl font-bold" id="stations">0</h4>
+        <p class="text-sm text-gray-600">Stations Installed</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow hover:shadow-md transition">
+        <i class='bx bx-time-five text-4xl mb-2'></i>
+        <h4 class="text-3xl font-bold" id="avgtime">0</h4>
+        <p class="text-sm text-gray-600">Avg. Swap Time (min)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="py-16 bg-white text-center" data-aos="fade-up">
+    <h3 class="text-3xl font-semibold text-green-700 mb-4">Get the EV Swap Guide</h3>
+    <p class="text-gray-600 mb-6 max-w-xl mx-auto">Download a simplified beginner-friendly PDF explaining the core ideas of battery swapping and EV future.</p>
+    <a href="ev_guide.pdf" download class="inline-block bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-lg shadow-lg transition hover:scale-105">
+      📥 Download Guide (PDF)
+    </a>
+  </section>
+
+  <footer class="bg-gray-900 text-white text-center py-6 mt-12">
+    <p class="mb-2">© 2025 EV Swap Portal — Educational Demo</p>
+    <div class="space-x-4 text-xl">
+      <a href="#" class="hover:text-green-400"><i class='bx bxl-linkedin'></i></a>
+      <a href="#" class="hover:text-green-400"><i class='bx bxl-twitter'></i></a>
+      <a href="#" class="hover:text-green-400"><i class='bx bxl-github'></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    function animateCounter(id, target, duration) {
+      let count = 0;
+      const speed = Math.floor(duration / target);
+      const el = document.getElementById(id);
+      const update = () => {
+        if (count < target) {
+          count++;
+          el.textContent = count;
+          setTimeout(update, speed);
+        }
+      };
+      update();
+    }
+    window.onload = () => {
+      animateCounter('swaps', 12450, 1500);
+      animateCounter('stations', 320, 1000);
+      animateCounter('avgtime', 3, 800);
+    };
+  </script>
+
+</body>
+</html>
